@@ -15,7 +15,7 @@ test('Login Test', async ( ) => {
     await page.click("text=Login");
     
     
-    await page.waitForTimeout(4000); 
+    await page.waitForTimeout(2000); 
     await page.fill('input[name="email"]', 'bhupesh@gmail.com');
     await page.fill('input[name="password"]', '1234');  
     await page.click('input[value="Login"]');
