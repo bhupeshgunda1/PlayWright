@@ -3,7 +3,7 @@
     "configFile": "C:\\Users\\Bhupesh Gunda\\Desktop\\PlayWright\\playwright.config.ts",
     "rootDir": "C:/Users/Bhupesh Gunda/Desktop/PlayWright/tests",
     "forbidOnly": false,
-    "fullyParallel": true,
+    "fullyParallel": false,
     "globalSetup": null,
     "globalTeardown": null,
     "globalTimeout": 0,
@@ -50,27 +50,27 @@
         "testDir": "C:/Users/Bhupesh Gunda/Desktop/PlayWright/tests",
         "testIgnore": [],
         "testMatch": [
-          "tests/login.test.ts"
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
         "timeout": 30000
       }
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "updateSourceMethod": "patch",
+    "updateSourceMethod": "3way",
     "version": "1.52.0",
     "workers": 4,
     "webServer": null
   },
   "suites": [
     {
-      "title": "login.test.ts",
-      "file": "login.test.ts",
+      "title": "alerts.test.ts",
+      "file": "alerts.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Login Test",
+          "title": "handling alerts",
           "ok": true,
           "tags": [],
           "tests": [
@@ -82,25 +82,40 @@
               "projectName": "Chrome",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 25,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 19905,
+                  "duration": 845,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "Enter name\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-05-25T03:42:06.251Z",
+                  "startTime": "2025-05-26T05:24:27.624Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Bhupesh Gunda\\Desktop\\PlayWright\\test-results\\alerts-handling-alerts-Chrome\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Bhupesh Gunda\\Desktop\\PlayWright\\test-results\\alerts-handling-alerts-Chrome\\video.webm"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "12975f3ff1f884ffbbdd-f6ccf531cf5c9c3d6419",
-          "file": "login.test.ts",
-          "line": 5,
+          "id": "d7bb30bede732e861350-ecb2f95ccf37af2956b4",
+          "file": "alerts.test.ts",
+          "line": 3,
           "column": 5
         }
       ]
@@ -108,8 +123,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-05-25T03:42:04.826Z",
-    "duration": 22042.388,
+    "startTime": "2025-05-26T05:24:25.724Z",
+    "duration": 2920.3009999999776,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
